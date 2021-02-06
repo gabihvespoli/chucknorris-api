@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>Chuck Norris Jokes</title>
+</head>
+<body>
+  <nav id="categories" class="menu">
+    <li onclick="getJoke('animal')"> Animal </li>
+    <li onclick="getJoke('career')"> Carrer </li>
+    <li onclick="getJoke('celebrity')"> Celebrity </li>
+    <li onclick="getJoke('dev')"> Dev </li>
+    <li onclick="getJoke('explicit')"> Explicit </li>
+    <li onclick="getJoke('fashion')"> Fashion </li>
+    <li onclick="getJoke('food')"> Food </li>
+    <li onclick="getJoke('history')"> History </li>
+    <li onclick="getJoke('money')"> Money </li>
+    <li onclick="getJoke('movie')"> Movie </li>
+    <li onclick="getJoke('music')"> Music </li>
+    <li onclick="getJoke('political')"> Political </li>
+    <li onclick="getJoke('religion')"> Religion </li>
+    <li onclick="getJoke('science')"> Science </li>
+    <li onclick="getJoke('sport')"> Sport </li>
+    <li onclick="getJoke('travel')"> Travel </li>
+  </nav>
+  <div id="root" class="container">
+    <form class="form" action="" method="GET">
+      <input class="input" type="text" /><br/>
+      <button type="submit">Search</button>
+      <p class="render"></p>
+    </form>
+    <div id="card" class="card">
+      <img id="avatar" src="https://media0.giphy.com/media/dUfJxhuqPOKF3DlBRw/giphy.gif" alt="Chuck">
+      <p id="joke"></p>
+    </div>
+  </div>
+</body>
+<script src="assets/app.js"></script>
+</html>
